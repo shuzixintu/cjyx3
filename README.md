@@ -10,7 +10,7 @@ A simple Python utility project.
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ hello.greet("World")
 
 ```bash
 # Install development dependencies
-pip install -r requirements.txt
+pip install -e .[dev]
 
 # Run tests
 python -m pytest tests/
