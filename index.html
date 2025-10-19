@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo 应用 - Supabase</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>Todo 应用</h1>
+
+      <div id="auth-section">
+        <div class="auth-forms">
+          <div class="auth-form">
+            <h2>登录</h2>
+            <input type="email" id="login-email" placeholder="邮箱" />
+            <input type="password" id="login-password" placeholder="密码" />
+            <button id="login-btn">登录</button>
+          </div>
+
+          <div class="auth-form">
+            <h2>注册</h2>
+            <input type="email" id="signup-email" placeholder="邮箱" />
+            <input type="password" id="signup-password" placeholder="密码" />
+            <button id="signup-btn">注册</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="app-section" style="display: none;">
+        <div class="user-info">
+          <span id="user-email"></span>
+          <button id="logout-btn">退出登录</button>
+        </div>
+
+        <div class="todo-input">
+          <input type="text" id="new-todo" placeholder="添加新的待办事项..." />
+          <button id="add-todo-btn">添加</button>
+        </div>
+
+        <div id="todos-list"></div>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
