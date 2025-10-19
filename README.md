@@ -9,6 +9,15 @@ A simple Python utility project.
 
 ## Installation
 
+First, clone the repository:
+
+```bash
+git clone https://github.com/shuzixintu/cjyx3.git
+cd cjyx3
+```
+
+Then install the package:
+
 ```bash
 pip install .
 ```
